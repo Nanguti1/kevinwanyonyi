@@ -52,8 +52,8 @@ export default function Header() {
             transition={{ duration: 0.5 }}
             className="text-lg md:text-xl font-bold flex items-center"
           >
-            <span className="text-gradient mr-1">Kevin</span>
-            <span className="text-white">Wanyonyi</span>
+            <span className="text-gradient mr-1">KEVIN</span>
+            <span className="text-white">WANYONYI</span>
           </motion.div>
         </Link>
 

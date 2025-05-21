@@ -62,7 +62,7 @@ const AboutPage = () => {
               </h1>
               <div className="flex flex-wrap justify-center gap-2 md:gap-4 text-lg md:text-2xl text-gray-300 mb-8">
                 <span className="inline-flex items-center px-3 py-1 bg-gray-800/50 backdrop-blur-sm rounded-full">
-                  5+ Years Experience
+                  6+ Years Experience
                 </span>
                 <span className="inline-flex items-center px-3 py-1 bg-gray-800/50 backdrop-blur-sm rounded-full">
                   BSc Computer Science
@@ -88,7 +88,7 @@ const AboutPage = () => {
 
                   <div className="space-y-6 text-gray-300">
                     <p>
-                      As a skilled Full-Stack Software Developer with over five
+                      As a skilled Full-Stack Software Developer with over six
                       years of experience, I am dedicated to creating software
                       solutions that not only meet but exceed client
                       expectations. I hold a Bachelor of Science in Computer
@@ -147,7 +147,7 @@ const AboutPage = () => {
                     <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-blue-600 to-purple-600 p-1">
                       <div className="w-full h-full rounded-full overflow-hidden">
                         <img
-                          src="/api/placeholder/128/128"
+                          src="/kevin-wanyonyi-fullstack-software-developer.jpg"
                           alt="Kevin Wanyonyi"
                           className="w-full h-full object-cover"
                         />
@@ -159,7 +159,7 @@ const AboutPage = () => {
 
                   <div className="flex justify-center gap-4 mb-6">
                     <a
-                      href="https://twitter.com"
+                      href="https://x.com/profnanguti"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-600 transition-colors"
@@ -167,7 +167,7 @@ const AboutPage = () => {
                       <Twitter size={18} />
                     </a>
                     <a
-                      href="https://instagram.com"
+                      href="https://instagram.com/kevin_nanguti"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-pink-600 transition-colors"
@@ -175,7 +175,7 @@ const AboutPage = () => {
                       <Instagram size={18} />
                     </a>
                     <a
-                      href="https://github.com"
+                      href="https://github.com/nanguti1"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-600 transition-colors"
@@ -183,7 +183,7 @@ const AboutPage = () => {
                       <Github size={18} />
                     </a>
                     <a
-                      href="https://linkedin.com"
+                      href="https://linkedin.com/in/kevin-w-wanyonyi"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-700 transition-colors"
@@ -194,7 +194,7 @@ const AboutPage = () => {
 
                   <div className="space-y-4">
                     <a
-                      href="mailto:wanyonyi@wanyonyikevin.co.ke"
+                      href="mailto:g.nanguti@gmail.com"
                       className="flex items-center justify-center gap-2 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 transition-colors"
                     >
                       <Mail size={18} />

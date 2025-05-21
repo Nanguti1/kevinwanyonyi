@@ -1,20 +1,22 @@
-// src/app/layout.tsx
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import { PageTransition } from "./components/animations/PageTransition";
 import { Metadata } from "next";
 
-const inter = Inter({ subsets: ["latin"] });
-
+const fontSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "600", "700", "800"],
+  variable: "--font-sans",
+});
 export const metadata: Metadata = {
   title: {
-    default: "Kevin Wanyonyi | Full Stack Developer",
+    default: "Kevin Wanyonyi | Laravel & Next.js Full Stack Developer",
     template: "%s | Kevin Wanyonyi",
   },
   description:
-    "Kevin Wanyonyi is a seasoned Full Stack Developer based in Nairobi, Kenya with over 5 years of experience in Laravel, Next.js, and more.",
+    "Kevin Wanyonyi is a seasoned Full Stack Developer based in Nairobi, Kenya with over 6 years of experience in Laravel, Next.js, and more.",
   keywords: [
     "Laravel developer",
     "Next.js developer",
@@ -80,7 +82,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.className} bg-gray-950 text-gray-100 antialiased min-h-screen flex flex-col`}
+        className={`${fontSans.variable} bg-gray-950 text-gray-100 antialiased min-h-screen flex flex-col`}
       >
         <Header />
         <main className="flex-grow">

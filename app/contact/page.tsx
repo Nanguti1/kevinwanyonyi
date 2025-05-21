@@ -58,7 +58,7 @@ const ContactPage = () => {
                   <h2 className="text-2xl font-bold mb-6">Send a Message</h2>
                   <form
                     className="space-y-6"
-                    action="mailto:wanyonyi@wanyonyikevin.co.ke"
+                    action="mailto:g.nanguti@gmail.com"
                     method="POST"
                     encType="text/plain"
                   >
@@ -127,7 +127,7 @@ const ContactPage = () => {
                     <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-blue-600 to-purple-600 p-1">
                       <div className="w-full h-full rounded-full overflow-hidden">
                         <img
-                          src="/api/placeholder/96/96"
+                          src="/kevin-wanyonyi-fullstack-software-developer.jpg"
                           alt="Kevin Wanyonyi"
                           className="w-full h-full object-cover"
                         />
@@ -138,7 +138,7 @@ const ContactPage = () => {
                   </div>
                   <div className="flex justify-center gap-4 mb-6">
                     <a
-                      href="https://twitter.com"
+                      href="https://x.com/profnanguti"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-600 transition-colors"
@@ -146,7 +146,7 @@ const ContactPage = () => {
                       <Twitter size={18} />
                     </a>
                     <a
-                      href="https://instagram.com"
+                      href="https://instagram.com/kevin_nanguti"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-pink-600 transition-colors"
@@ -154,7 +154,7 @@ const ContactPage = () => {
                       <Instagram size={18} />
                     </a>
                     <a
-                      href="https://github.com"
+                      href="https://github.com/nanguti1"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-600 transition-colors"
@@ -162,7 +162,7 @@ const ContactPage = () => {
                       <Github size={18} />
                     </a>
                     <a
-                      href="https://linkedin.com"
+                      href="https://linkedin.com/in/kevin-w-wanyonyi"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-700 transition-colors"
@@ -171,7 +171,7 @@ const ContactPage = () => {
                     </a>
                   </div>
                   <a
-                    href="mailto:wanyonyi@wanyonyikevin.co.ke"
+                    href="mailto:g.nanguti@gmail.com"
                     className="flex items-center justify-center gap-2 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 transition-colors mb-2"
                   >
                     <Mail size={18} />

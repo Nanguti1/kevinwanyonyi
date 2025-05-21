@@ -10,27 +10,32 @@ export default function Footer() {
     {
       name: "GitHub",
       icon: <Github size={20} />,
-      url: "https://github.com/kevinwanyonyi",
+      url: "https://github.com/nanguti",
+    },
+    {
+      name: "GitHub (Personal)",
+      icon: <Github size={20} />,
+      url: "https://github.com/nanguti1",
     },
     {
       name: "X (Twitter)",
       icon: <Twitter size={20} />,
-      url: "https://twitter.com/kevinwanyonyi",
+      url: "https://x.com/profnanguti",
     },
     {
       name: "LinkedIn",
       icon: <Linkedin size={20} />,
-      url: "https://linkedin.com/in/kevinwanyonyi",
+      url: "https://linkedin.com/in/kevin-w-wanyonyi",
     },
     {
       name: "Instagram",
       icon: <Instagram size={20} />,
-      url: "https://instagram.com/kevinwanyonyi",
+      url: "https://instagram.com/kevin_nanguti",
     },
     {
       name: "Email",
       icon: <Mail size={20} />,
-      url: "mailto:wanyonyi@wanyonyikevin.co.ke",
+      url: "mailto:g.nanguti@gmail.com",
     },
   ];
 
@@ -49,12 +54,12 @@ export default function Footer() {
             {/* Brand Information */}
             <div className="col-span-1 md:col-span-2">
               <Link href="/" className="text-xl font-bold">
-                <span className="text-gradient">Kevin</span>
-                <span className="text-white"> Wanyonyi</span>
+                <span className="text-gradient">KEVIN</span>
+                <span className="text-white"> WANYONYI</span>
               </Link>
               <p className="mt-4 text-gray-400 max-w-md">
                 Full Stack Software Developer based in Nairobi, Kenya with over
-                5 years of experience in Laravel, Next.js, and more.
+                6 years of experience in Laravel, Next.js, and more.
               </p>
             </div>
 
@@ -92,7 +97,7 @@ export default function Footer() {
                   </a>
                 ))}
               </div>
-              <p className="mt-4 text-gray-400">wanyonyi@wanyonyikevin.co.ke</p>
+              <p className="mt-4 text-gray-400">g.nangutu@gmail.com</p>
             </div>
           </div>
         </FadeIn>

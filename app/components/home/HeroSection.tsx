@@ -32,7 +32,7 @@ export default function HeroSection() {
           <div className="flex justify-center gap-4">
             <Link href="/projects">
               <motion.button
-                className="px-8 py-3 bg-primary text-black font-medium rounded-lg flex items-center gap-2 hover:bg-primary/90 transition-colors"
+                className="px-8 py-3 bg-primary text-black font-medium rounded-lg flex items-center gap-2 hover:bg-primary/90 transition-colors cursor-pointer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -43,7 +43,7 @@ export default function HeroSection() {
 
             <Link href="/contact">
               <motion.button
-                className="px-8 py-3 bg-transparent text-white font-medium rounded-lg flex items-center gap-2 hover:bg-white/10 border border-white/30 transition-colors"
+                className="px-8 py-3 bg-transparent text-white font-medium rounded-lg flex items-center gap-2 hover:bg-white/10 border border-white/30 transition-colors cursor-pointer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -53,7 +53,7 @@ export default function HeroSection() {
           </div>
 
           {/* Scroll Indicator */}
-          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer">
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ repeat: Infinity, duration: 1.5 }}
