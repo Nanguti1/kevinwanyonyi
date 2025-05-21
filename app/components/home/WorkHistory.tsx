@@ -35,7 +35,7 @@ const workHistory = [
 ];
 
 export default function WorkHistory() {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <section className="py-16 bg-gray-900/50">
