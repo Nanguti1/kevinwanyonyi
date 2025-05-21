@@ -6,12 +6,51 @@ import { Mail, Github, Linkedin, Instagram, Twitter } from "lucide-react";
 
 const ContactPage = () => {
   const [scrollY, setScrollY] = useState(0);
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [loading, setLoading] = useState(false);
+  const [feedback, setFeedback] = useState<{
+    type: "success" | "error";
+    message: string;
+  } | null>(null);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setFeedback(null);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        setFeedback({ type: "success", message: "Message sent successfully!" });
+        setForm({ name: "", email: "", message: "" });
+      } else {
+        const data = await res.json();
+        setFeedback({
+          type: "error",
+          message: data.error || "Failed to send message.",
+        });
+      }
+    } catch (err) {
+      setFeedback({ type: "error", message: "Failed to send message." });
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <>
@@ -56,12 +95,18 @@ const ContactPage = () => {
               <FadeIn direction="up">
                 <div className="glass-effect p-8 rounded-2xl mb-12 border border-white/10 shadow-lg">
                   <h2 className="text-2xl font-bold mb-6">Send a Message</h2>
-                  <form
-                    className="space-y-6"
-                    action="mailto:g.nanguti@gmail.com"
-                    method="POST"
-                    encType="text/plain"
-                  >
+                  {feedback && (
+                    <div
+                      className={`mb-4 px-4 py-3 rounded text-sm font-medium ${
+                        feedback.type === "success"
+                          ? "bg-green-100 text-green-800"
+                          : "bg-red-100 text-red-800"
+                      }`}
+                    >
+                      {feedback.message}
+                    </div>
+                  )}
+                  <form className="space-y-6" onSubmit={handleSubmit}>
                     <div>
                       <label
                         htmlFor="name"
@@ -74,8 +119,11 @@ const ContactPage = () => {
                         id="name"
                         name="name"
                         required
+                        value={form.name}
+                        onChange={handleChange}
                         className="w-full px-4 py-2 rounded border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                         autoComplete="name"
+                        disabled={loading}
                       />
                     </div>
                     <div>
@@ -90,8 +138,11 @@ const ContactPage = () => {
                         id="email"
                         name="email"
                         required
+                        value={form.email}
+                        onChange={handleChange}
                         className="w-full px-4 py-2 rounded border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                         autoComplete="email"
+                        disabled={loading}
                       />
                     </div>
                     <div>
@@ -106,14 +157,18 @@ const ContactPage = () => {
                         name="message"
                         rows={5}
                         required
+                        value={form.message}
+                        onChange={handleChange}
                         className="w-full px-4 py-2 rounded border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                        disabled={loading}
                       />
                     </div>
                     <button
                       type="submit"
-                      className="px-6 py-2 bg-primary text-primary-foreground rounded font-semibold card-hover"
+                      className="px-6 py-2 bg-primary text-primary-foreground rounded font-semibold card-hover disabled:opacity-60 cursor-pointer"
+                      disabled={loading}
                     >
-                      Send Message
+                      {loading ? "Sending..." : "Send Message"}
                     </button>
                   </form>
                 </div>
