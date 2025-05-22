@@ -1,9 +1,9 @@
-import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import { Plus_Jakarta_Sans } from "next/font/google";
+import type { Metadata, Viewport } from "next";
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import { PageTransition } from "./components/animations/PageTransition";
-import type { Metadata } from "next";
 
 const fontSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -35,7 +35,6 @@ export const metadata: Metadata = {
   creator: "Kevin Wanyonyi",
   publisher: "Kevin Wanyonyi",
   themeColor: "#0f172a",
-  viewport: "width=device-width, initial-scale=1",
   formatDetection: {
     email: false,
     telephone: false,
@@ -86,6 +85,43 @@ export const metadata: Metadata = {
   },
 };
 
+// ✅ Viewport refactored separately
+export function generateViewport(): Viewport {
+  return {
+    width: "device-width",
+    initialScale: 1,
+    themeColor: "#0f172a",
+  };
+}
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Kevin Wanyonyi",
+  url: "https://wanyonyikevin.co.ke",
+  sameAs: [
+    "https://github.com/nanguti",
+    "https://linkedin.com/in/kevin-w-wanyonyi",
+    "https://twitter.com/profnanguti",
+  ],
+  jobTitle: "Full Stack Web Developer",
+  worksFor: {
+    "@type": "Organization",
+    name: "Freelance",
+  },
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Nairobi",
+    addressCountry: "KE",
+  },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "Bachelor of Computer Science",
+  },
+  description:
+    "Kevin Wanyonyi is a Full Stack Developer from Kenya with deep expertise in Laravel, Next.js, Tailwind CSS, MySQL, and modern web technologies.",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -99,35 +135,7 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Kevin Wanyonyi",
-              url: "https://wanyonyikevin.co.ke",
-              sameAs: [
-                "https://github.com/nanguti",
-                "https://linkedin.com/in/kevin-w-wanyonyi",
-                "https://twitter.com/profnanguti",
-              ],
-              jobTitle: "Full Stack Web Developer",
-              worksFor: {
-                "@type": "Organization",
-                name: "Freelance",
-              },
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Nairobi",
-                addressCountry: "KE",
-              },
-              alumniOf: {
-                "@type": "CollegeOrUniversity",
-                name: "Bachelor of Computer Science",
-              },
-              description:
-                "Kevin Wanyonyi is a Full Stack Developer from Kenya with deep expertise in Laravel, Next.js, Tailwind CSS, MySQL, and modern web technologies.",
-            }),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
       <body
