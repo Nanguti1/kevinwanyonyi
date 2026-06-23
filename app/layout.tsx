@@ -14,12 +14,13 @@ const fontSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://wanyonyikevin.co.ke"),
   title: {
-    default: "Laravel, Next.js, and Tailwind CSS Developer in Kenya",
-    template: "%s | Kevin Wanyonyi",
+    default: "Kevin Wafula Wanyonyi – Senior Full Stack Software Engineer",
+    template: "%s | Kevin Wafula Wanyonyi",
   },
   description:
-    "Kevin Wanyonyi is a top Full Stack Developer in Kenya specializing in Laravel, Next.js, Tailwind CSS, and scalable web solutions.",
+    "Kevin Wafula Wanyonyi is a Senior Full Stack Software Engineer with 7+ years of experience specializing in Laravel, Next.js, React, and scalable enterprise applications.",
   keywords: [
+    "Senior Full Stack Software Engineer",
     "Laravel developer in Kenya",
     "Next.js developer in Kenya",
     "Tailwind CSS developer",
@@ -31,9 +32,9 @@ export const metadata: Metadata = {
     "Hire Laravel Developer Kenya",
     "Hire Next.js Developer Kenya",
   ],
-  authors: [{ name: "Kevin Wanyonyi", url: "https://wanyonyikevin.co.ke" }],
-  creator: "Kevin Wanyonyi",
-  publisher: "Kevin Wanyonyi",
+  authors: [{ name: "Kevin Wafula Wanyonyi", url: "https://wanyonyikevin.co.ke" }],
+  creator: "Kevin Wafula Wanyonyi",
+  publisher: "Kevin Wafula Wanyonyi",
   themeColor: "#0f172a",
   formatDetection: {
     email: false,
@@ -50,24 +51,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://wanyonyikevin.co.ke",
-    title: "Laravel, Next.js, and Tailwind CSS Developer in Kenya",
+    title: "Kevin Wafula Wanyonyi – Senior Full Stack Software Engineer",
     description:
-      "Kevin Wanyonyi is a top Full Stack Developer in Nairobi, Kenya with 6+ years of experience in Laravel, Next.js, and Tailwind CSS.",
-    siteName: "Kevin Wanyonyi - Full Stack Developer",
+      "Kevin Wafula Wanyonyi is a Senior Full Stack Software Engineer with 7+ years of experience in Laravel, PHP, Next.js, React, and system architecture.",
+    siteName: "Kevin Wafula Wanyonyi - Portfolio",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Kevin Wanyonyi - Laravel and Next.js Developer",
+        alt: "Kevin Wafula Wanyonyi - Senior Full Stack Software Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kevin Wanyonyi | Laravel & Next.js Developer in Kenya",
+    title: "Kevin Wafula Wanyonyi – Senior Full Stack Software Engineer",
     description:
-      "Kevin Wanyonyi is a Full Stack Web Developer in Kenya focusing on Laravel, Next.js, and Tailwind CSS. View portfolio, hire or connect.",
+      "Kevin Wafula Wanyonyi is a Senior Full Stack Software Engineer focusing on Laravel, Next.js, and system architecture. View portfolio, hire or connect.",
     images: ["/images/twitter-image.jpg"],
     site: "@kevinwanyonyi",
     creator: "@kevinwanyonyi",
@@ -97,14 +98,14 @@ export function generateViewport(): Viewport {
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Kevin Wanyonyi",
+  name: "Kevin Wafula Wanyonyi",
   url: "https://wanyonyikevin.co.ke",
   sameAs: [
     "https://github.com/nanguti",
     "https://linkedin.com/in/kevin-w-wanyonyi",
     "https://twitter.com/profnanguti",
   ],
-  jobTitle: "Full Stack Web Developer",
+  jobTitle: "Senior Full Stack Software Engineer",
   worksFor: {
     "@type": "Organization",
     name: "Freelance",
@@ -119,7 +120,7 @@ const structuredData = {
     name: "Bachelor of Computer Science",
   },
   description:
-    "Kevin Wanyonyi is a Full Stack Developer from Kenya with deep expertise in Laravel, Next.js, Tailwind CSS, MySQL, and modern web technologies.",
+    "Kevin Wafula Wanyonyi is a Senior Full Stack Software Engineer from Kenya with 7+ years of expertise in Laravel, Next.js, React, Tailwind CSS, MySQL, and system architecture.",
 };
 
 export default function RootLayout({

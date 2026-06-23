@@ -19,14 +19,12 @@ export default function HeroSection() {
       <div className="container-custom text-center px-4 md:px-8">
         <FadeIn>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-            <span className="block">FullStack</span>
-            <span className="text-gradient block">Software Developer</span>
+            <span className="block">Senior Full Stack</span>
+            <span className="text-gradient block">Software Engineer</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10">
-            I&apos;m Kevin W. Wanyonyi, a seasoned software developer and tech
-            entrepreneur based in Nairobi, Kenya. Specializing in Laravel,
-            Next.js, and cutting-edge web development.
+            I&apos;m Kevin W. Wanyonyi, a results-driven engineer with 7+ years of experience in system architecture, enterprise applications, and technical leadership. Specializing in Laravel, Next.js, React, TypeScript, and robust API-driven platforms.
           </p>
 
           <div className="flex justify-center gap-4">

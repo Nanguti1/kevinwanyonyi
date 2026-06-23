@@ -8,15 +8,16 @@ import WorkHistory from "./components/home/WorkHistory";
 import CollaboratorsSection from "./components/home/CollaboratorsSection";
 
 export const metadata: Metadata = {
-  title: "Kevin Wanyonyi | Full Stack Developer in Kenya",
+  title: "Kevin Wafula Wanyonyi | Senior Full Stack Software Engineer",
   description:
-    "Kevin Wanyonyi is a seasoned Full Stack Developer based in Nairobi, Kenya with over 5 years of experience in Laravel, Next.js, and modern web development.",
+    "Kevin Wafula Wanyonyi is a Senior Full Stack Software Engineer based in Nairobi, Kenya with 7+ years of experience in Laravel, Next.js, React, and system architecture.",
   keywords: [
-    "Full Stack Developer",
+    "Senior Full Stack Software Engineer",
     "Laravel Developer",
     "Next.js Developer",
     "Kenya",
     "Web Development",
+    "System Architecture",
   ],
   alternates: {
     canonical: "/",

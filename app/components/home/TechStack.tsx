@@ -33,6 +33,20 @@ const technologies: TechItem[] = [
     category: "language",
   },
   {
+    name: "TypeScript",
+    description:
+      "Leveraging TypeScript to add static typing, improving code reliability and maintainability in complex codebases.",
+    icon: "TS",
+    category: "language",
+  },
+  {
+    name: "SQL & Databases",
+    description:
+      "Designing and optimizing relational databases with MySQL, PostgreSQL, and SQL for performance and scalability.",
+    icon: "💾",
+    category: "language",
+  },
+  {
     name: "Laravel",
     description:
       "Developing robust and scalable web applications with Laravel, leveraging its powerful MVC architecture.",
@@ -72,6 +86,13 @@ const technologies: TechItem[] = [
     description:
       "Crafting intuitive and reactive user interfaces with Vue.js, focusing on simplicity and flexibility.",
     icon: "🟢",
+    category: "framework",
+  },
+  {
+    name: "Tailwind CSS",
+    description:
+      "Utilizing Tailwind CSS for rapid styling, custom themes, and implementing highly responsive layouts.",
+    icon: "🎨",
     category: "framework",
   },
 ];

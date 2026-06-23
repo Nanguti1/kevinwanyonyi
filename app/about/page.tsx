@@ -16,6 +16,9 @@ import {
   Database,
   Layout,
   Server,
+  Cpu,
+  Wrench,
+  Shield,
 } from "lucide-react";
 
 const AboutPage = () => {
@@ -58,11 +61,11 @@ const AboutPage = () => {
           <div className="relative z-10 text-center px-4">
             <FadeIn>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
-                <span className="text-gradient">Full-Stack Developer</span>
+                <span className="text-gradient">Senior Full-Stack Engineer</span>
               </h1>
               <div className="flex flex-wrap justify-center gap-2 md:gap-4 text-lg md:text-2xl text-gray-300 mb-8">
                 <span className="inline-flex items-center px-3 py-1 bg-gray-800/50 backdrop-blur-sm rounded-full">
-                  6+ Years Experience
+                  7+ Years Experience
                 </span>
                 <span className="inline-flex items-center px-3 py-1 bg-gray-800/50 backdrop-blur-sm rounded-full">
                   BSc Computer Science
@@ -88,51 +91,27 @@ const AboutPage = () => {
 
                   <div className="space-y-6 text-gray-300">
                     <p>
-                      As a skilled Full-Stack Software Developer with over six
-                      years of experience, I am dedicated to creating software
-                      solutions that not only meet but exceed client
-                      expectations. I hold a Bachelor of Science in Computer
-                      Science from Multimedia University of Kenya, where I
-                      gained a solid grounding in programming languages, data
-                      structures, algorithms, and core software engineering
-                      principles.
+                      I am a results-driven Senior Full-Stack Software Engineer with 7+ years of experience designing, developing, deploying, and supporting enterprise-grade web applications, business systems, ERP/CRM solutions, and API-driven platforms. I hold a Bachelor of Science in Computer Science from Multimedia University of Kenya (2013 – 2017).
                     </p>
 
                     <p>
-                      Currently, I work as a Senior Software Engineer at
-                      Eclectics International, where I thrive in collaborative
-                      environments, seamlessly integrating with engineers,
-                      analysts, and stakeholders. My technical expertise spans
-                      popular backend frameworks such as Laravel, Django, and
-                      Node.js, while I leverage React and Vue.js for developing
-                      engaging and responsive user interfaces.
+                      My career journey is built on high-impact full-stack development across multiple sectors, including Insurance, E-commerce, EdTech, Telematics, and Telecommunications. I have developed a wide array of systems ranging from insurance policy administration platforms and ERP/CRM software to payment-integrated e-commerce stores, fleet tracking applications, and interactive learning platforms.
                     </p>
 
                     <p>
-                      With deep knowledge of database management, I work with
-                      MariaDB, MySQL, and MongoDB, utilizing SQL as my primary
-                      query language to ensure efficient data manipulation.
-                      Additionally, my frontend development skills include
-                      crafting visually appealing, user-friendly interfaces with
-                      HTML, CSS, Bootstrap, and Tailwind CSS.
+                      On the backend, my expertise lies in PHP (Laravel, Yii2) and Python (Django), backed by Node.js and Express.js. I design robust system architectures, implement secure authentication/authorization (JWT, RBAC), and build scalable RESTful APIs. For database management, I design and optimize MySQL, PostgreSQL, and MongoDB database schemas, focusing on complex query optimization and data modeling.
                     </p>
 
                     <p>
-                      I have hands-on experience with content management systems
-                      like WordPress and GetSimple CMS, enabling streamlined
-                      content creation and management. My proficiency in Git and
-                      Bitbucket Pipelines enhances version control and
-                      collaboration, and my strong understanding of Linux allows
-                      me to configure and optimize Nginx and Apache servers for
-                      peak performance.
+                      On the frontend, I create responsive, user-centered web applications using Next.js, React.js, TypeScript, and Vue.js, styling them with Tailwind CSS. I specialize in translating complex Figma designs into high-performance, mobile-first, and accessible interfaces.
                     </p>
 
                     <p>
-                      This comprehensive skill set positions me as a valuable
-                      asset for organizations seeking a senior-level Full-Stack
-                      Developer capable of addressing complex software
-                      challenges and delivering innovative solutions that align
-                      with business objectives.
+                      Beyond coding, I possess hands-on experience configuring and maintaining Linux servers, setting up Nginx, and building automated CI/CD deployment pipelines. My technical support background, testing practices (unit and integration testing), and code review workflows ensure the delivery of secure, well-documented, and production-ready applications.
+                    </p>
+
+                    <p>
+                      <strong>Professional Philosophy:</strong> I believe in a clean-code approach, focusing on scalability and reliability. I approach problem-solving with a structured, analytical mindset, ensuring that the software architecture matches real-world business requirements while providing an exceptional experience for the end-user.
                     </p>
                   </div>
                 </div>
@@ -153,8 +132,8 @@ const AboutPage = () => {
                         />
                       </div>
                     </div>
-                    <h3 className="text-2xl font-bold mt-4">Kevin Wanyonyi</h3>
-                    <p className="text-gray-300">Senior Software Engineer</p>
+                    <h3 className="text-2xl font-bold mt-4">Kevin W. Wanyonyi</h3>
+                    <p className="text-gray-300 font-medium">Senior Full-Stack Engineer</p>
                   </div>
 
                   <div className="flex justify-center gap-4 mb-6">
@@ -236,129 +215,181 @@ const AboutPage = () => {
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Backend Skills */}
+              {/* Programming Languages */}
               <StaggerItem>
                 <div className="glass-effect p-6 rounded-2xl border border-white/10 h-full shadow-lg">
                   <div className="flex items-center mb-4">
-                    <Server className="text-blue-500 mr-3" size={24} />
-                    <h3 className="text-xl font-bold">Backend Development</h3>
+                    <Cpu className="text-blue-500 mr-3" size={24} />
+                    <h3 className="text-xl font-bold">Programming Languages</h3>
                   </div>
-                  <ul className="space-y-2">
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                      Laravel
-                    </li>
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                      Django
-                    </li>
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                      Node.js
-                    </li>
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                      Express.js
-                    </li>
+                  <ul className="space-y-2 text-gray-300">
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                       PHP
                     </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      Python
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      JavaScript (ES6+)
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      TypeScript
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      SQL
+                    </li>
                   </ul>
                 </div>
               </StaggerItem>
 
-              {/* Frontend Skills */}
+              {/* Backend Frameworks */}
               <StaggerItem>
                 <div className="glass-effect p-6 rounded-2xl border border-white/10 h-full shadow-lg">
                   <div className="flex items-center mb-4">
-                    <Layout className="text-purple-500 mr-3" size={24} />
-                    <h3 className="text-xl font-bold">Frontend Development</h3>
+                    <Server className="text-purple-500 mr-3" size={24} />
+                    <h3 className="text-xl font-bold">Backend & Frameworks</h3>
                   </div>
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 text-gray-300">
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                      React.js & Next.js
+                      Laravel
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                      Yii2
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                      Django
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                      Node.js & Express.js
+                    </li>
+                  </ul>
+                </div>
+              </StaggerItem>
+
+              {/* Frontend Technologies */}
+              <StaggerItem>
+                <div className="glass-effect p-6 rounded-2xl border border-white/10 h-full shadow-lg">
+                  <div className="flex items-center mb-4">
+                    <Layout className="text-indigo-500 mr-3" size={24} />
+                    <h3 className="text-xl font-bold">Frontend Technologies</h3>
+                  </div>
+                  <ul className="space-y-2 text-gray-300">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                      Next.js & React.js
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
                       Vue.js
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                      <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
                       Tailwind CSS
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                      HTML5/CSS3
+                      <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                      Responsive Web Design
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                      JavaScript/TypeScript
+                      <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                      Mobile-First Development
                     </li>
                   </ul>
                 </div>
               </StaggerItem>
 
-              {/* Database Skills */}
+              {/* API & Database Management */}
               <StaggerItem>
                 <div className="glass-effect p-6 rounded-2xl border border-white/10 h-full shadow-lg">
                   <div className="flex items-center mb-4">
-                    <Database className="text-indigo-500 mr-3" size={24} />
-                    <h3 className="text-xl font-bold">Database Management</h3>
+                    <Database className="text-pink-500 mr-3" size={24} />
+                    <h3 className="text-xl font-bold">APIs & Databases</h3>
                   </div>
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 text-gray-300">
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
-                      MySQL/MariaDB
+                      <span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>
+                      MySQL & PostgreSQL
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                      <span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>
                       MongoDB
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
-                      PostgreSQL
+                      <span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>
+                      RESTful API Development
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
-                      SQL
+                      <span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>
+                      JWT Auth & RBAC
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
-                      Redis
+                      <span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>
+                      Payment Integrations (M-Pesa)
                     </li>
                   </ul>
                 </div>
               </StaggerItem>
 
-              {/* DevOps Skills */}
+              {/* DevOps & Tools */}
               <StaggerItem>
                 <div className="glass-effect p-6 rounded-2xl border border-white/10 h-full shadow-lg">
                   <div className="flex items-center mb-4">
-                    <Code className="text-pink-500 mr-3" size={24} />
-                    <h3 className="text-xl font-bold">DevOps & Tools</h3>
+                    <Wrench className="text-amber-500 mr-3" size={24} />
+                    <h3 className="text-xl font-bold">DevOps & Infrastructure</h3>
                   </div>
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 text-gray-300">
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>
-                      Git & GitHub
+                      <span className="w-2 h-2 bg-amber-500 rounded-full mr-2"></span>
+                      Git, GitHub & GitLab
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>
-                      Linux Server Administration
+                      <span className="w-2 h-2 bg-amber-500 rounded-full mr-2"></span>
+                      Linux Server Management & Nginx
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>
-                      Nginx/Apache
+                      <span className="w-2 h-2 bg-amber-500 rounded-full mr-2"></span>
+                      Docker & CI/CD Pipelines
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>
-                      Docker
+                      <span className="w-2 h-2 bg-amber-500 rounded-full mr-2"></span>
+                      Vercel & Postman
+                    </li>
+                  </ul>
+                </div>
+              </StaggerItem>
+
+              {/* Testing & QA */}
+              <StaggerItem>
+                <div className="glass-effect p-6 rounded-2xl border border-white/10 h-full shadow-lg">
+                  <div className="flex items-center mb-4">
+                    <Shield className="text-emerald-500 mr-3" size={24} />
+                    <h3 className="text-xl font-bold">Quality & Methodology</h3>
+                  </div>
+                  <ul className="space-y-2 text-gray-300">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-emerald-500 rounded-full mr-2"></span>
+                      Unit Testing & Integration Testing
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>
-                      CI/CD Pipelines
+                      <span className="w-2 h-2 bg-emerald-500 rounded-full mr-2"></span>
+                      System Architecture & DB Design
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-emerald-500 rounded-full mr-2"></span>
+                      Performance & Query Optimization
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-emerald-500 rounded-full mr-2"></span>
+                      Agile & Scrum Development
                     </li>
                   </ul>
                 </div>
