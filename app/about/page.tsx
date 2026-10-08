@@ -65,7 +65,7 @@ const AboutPage = () => {
               </h1>
               <div className="flex flex-wrap justify-center gap-2 md:gap-4 text-lg md:text-2xl text-gray-300 mb-8">
                 <span className="inline-flex items-center px-3 py-1 bg-gray-800/50 backdrop-blur-sm rounded-full">
-                  7+ Years Experience
+                  8+ Years Experience
                 </span>
                 <span className="inline-flex items-center px-3 py-1 bg-gray-800/50 backdrop-blur-sm rounded-full">
                   BSc Computer Science
@@ -91,23 +91,19 @@ const AboutPage = () => {
 
                   <div className="space-y-6 text-gray-300">
                     <p>
-                      I am a results-driven Senior Full-Stack Software Engineer with 7+ years of experience designing, developing, deploying, and supporting enterprise-grade web applications, business systems, ERP/CRM solutions, and API-driven platforms. I hold a Bachelor of Science in Computer Science from Multimedia University of Kenya (2013 – 2017).
+                      I am a Senior Full-Stack Software Developer with 8+ years of professional experience designing, developing, deploying, securing, and supporting enterprise software systems across insurance, healthcare-adjacent, telecommunications, education, recruitment, e-commerce, and business management sectors.
                     </p>
 
                     <p>
-                      My career journey is built on high-impact full-stack development across multiple sectors, including Insurance, E-commerce, EdTech, Telematics, and Telecommunications. I have developed a wide array of systems ranging from insurance policy administration platforms and ERP/CRM software to payment-integrated e-commerce stores, fleet tracking applications, and interactive learning platforms.
+                      I deliver production applications using Laravel, PHP, Django, Next.js, React, Vue.js, MySQL and PostgreSQL — and stay involved after launch, keeping systems available, secure and straightforward to maintain as they grow.
                     </p>
 
                     <p>
-                      On the backend, my expertise lies in PHP (Laravel, Yii2) and Python (Django), backed by Node.js and Express.js. I design robust system architectures, implement secure authentication/authorization (JWT, RBAC), and build scalable RESTful APIs. For database management, I design and optimize MySQL, PostgreSQL, and MongoDB database schemas, focusing on complex query optimization and data modeling.
+                      I have hands-on experience with cloud infrastructure, Linux server administration, VPS management, DigitalOcean deployments, AWS S3 storage, CI/CD, API integration, database optimization, and business process automation. I also have working knowledge of Microsoft Power Automate and Power BI for workflow automation and reporting.
                     </p>
 
                     <p>
-                      On the frontend, I create responsive, user-centered web applications using Next.js, React.js, TypeScript, and Vue.js, styling them with Tailwind CSS. I specialize in translating complex Figma designs into high-performance, mobile-first, and accessible interfaces.
-                    </p>
-
-                    <p>
-                      Beyond coding, I possess hands-on experience configuring and maintaining Linux servers, setting up Nginx, and building automated CI/CD deployment pipelines. My technical support background, testing practices (unit and integration testing), and code review workflows ensure the delivery of secure, well-documented, and production-ready applications.
+                      Beyond technical delivery, I spend time mentoring other developers, tightening up development processes, and writing documentation that the next person can actually use, rather than treating those as an afterthought to the code.
                     </p>
 
                     <p>
@@ -133,7 +129,8 @@ const AboutPage = () => {
                       </div>
                     </div>
                     <h3 className="text-2xl font-bold mt-4">Kevin W. Wanyonyi</h3>
-                    <p className="text-gray-300 font-medium">Senior Full-Stack Engineer</p>
+                    <p className="text-gray-300 font-medium">Senior Full-Stack Software Consultant</p>
+                    <p className="text-gray-400 text-sm mt-1">0726 076 333</p>
                   </div>
 
                   <div className="flex justify-center gap-4 mb-6">
@@ -181,7 +178,7 @@ const AboutPage = () => {
                     </a>
 
                     <a
-                      href="/cv.pdf"
+                      href="/KEVIN-W-WANYONYI-UPDATED-CV.pdf"
                       download
                       className="flex items-center justify-center gap-2 py-3 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors"
                     >
@@ -361,6 +358,14 @@ const AboutPage = () => {
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-amber-500 rounded-full mr-2"></span>
+                      DigitalOcean & AWS S3
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-amber-500 rounded-full mr-2"></span>
+                      VPS Administration & SSL Management
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-amber-500 rounded-full mr-2"></span>
                       Vercel & Postman
                     </li>
                   </ul>
@@ -390,6 +395,38 @@ const AboutPage = () => {
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-emerald-500 rounded-full mr-2"></span>
                       Agile & Scrum Development
+                    </li>
+                  </ul>
+                </div>
+              </StaggerItem>
+
+              {/* Automation & Enterprise Platforms */}
+              <StaggerItem>
+                <div className="glass-effect p-6 rounded-2xl border border-white/10 h-full shadow-lg">
+                  <div className="flex items-center mb-4">
+                    <Cpu className="text-cyan-500 mr-3" size={24} />
+                    <h3 className="text-xl font-bold">Automation & Enterprise</h3>
+                  </div>
+                  <ul className="space-y-2 text-gray-300">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-cyan-500 rounded-full mr-2"></span>
+                      Microsoft Power Automate
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-cyan-500 rounded-full mr-2"></span>
+                      Microsoft Power BI
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-cyan-500 rounded-full mr-2"></span>
+                      ERPNext
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-cyan-500 rounded-full mr-2"></span>
+                      WordPress
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-cyan-500 rounded-full mr-2"></span>
+                      CMS Platforms
                     </li>
                   </ul>
                 </div>

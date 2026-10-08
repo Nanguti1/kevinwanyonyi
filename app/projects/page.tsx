@@ -4,7 +4,58 @@ import { FadeIn } from "../components/animations/PageTransition";
 import BackgroundScene from "../components/animations/BackgroundScene";
 import { ChevronDown, ChevronUp, Briefcase, Code, CheckCircle2, AlertTriangle, Lightbulb } from "lucide-react";
 
-const projects = [
+interface Project {
+  title: string;
+  role: string;
+  overview: string;
+  problem: string;
+  technologies: string[];
+  features: string[];
+  responsibilities: string[];
+  impact: string;
+  challenges: string;
+  liveUrl?: string;
+}
+
+const projects: Project[] = [
+  {
+    title: "RoyalMed – Hospital Information System (HIS)",
+    role: "Lead Solution Architect & Senior Full-Stack Software Developer",
+    overview: "A comprehensive Hospital Information System for Kenyan healthcare facilities, from small clinics to hospitals. It replaces paper-based and fragmented systems with a single platform covering clinical care, billing, and SHA/MOH compliance reporting.",
+    problem: "Paper-based and fragmented systems across clinical departments, billing, and compliance reporting, leading to inefficiencies, data silos, and regulatory compliance challenges.",
+    technologies: ["Laravel 13", "React 19", "TypeScript", "MySQL", "Tailwind CSS", "REST APIs", "Docker", "DigitalOcean", "Linux", "Nginx", "AWS S3", "M-Pesa Integration", "SHA/NHIF Integration", "RBAC", "JWT Authentication"],
+    features: [
+      "Patient management module covering demographics, medical history, chronic conditions, allergies, insurance details, and document storage",
+      "Clinical workflows for patient triage, consultations, SOAP notes, electronic prescriptions, and vital signs tracking",
+      "Laboratory module covering sample collection through processing, verification, and result reporting",
+      "Pharmacy management system: inventory, dispensing, batch tracking, purchase orders, and expiry monitoring",
+      "Billing and finance module: invoicing, M-Pesa payments, insurance billing, payment plans, and financial reporting",
+      "SHA/NHIF insurance workflows including pre-authorizations, claims processing, insurer management, and reconciliation",
+      "Appointment scheduling and queue management for clinicians and dental practitioners",
+      "Dental module: treatment plans, dental charting, and chair scheduling",
+      "Vaccination workflows covering schedules, certificates, and reminders",
+      "Inventory and procurement modules for stock control, purchasing, transfers, and warehouse operations",
+      "Patient and staff self-service portals for appointments, lab result access, billing information, schedules, and internal communications",
+      "Reporting modules covering financial performance, disease surveillance, lab and pharmacy operations, clinician productivity, and regulatory submissions",
+      "Role-Based Access Control (RBAC) with department-specific permissions and workflow restrictions",
+      "Audit logging, activity tracking, and document versioning for complete data traceability",
+      "Two-Factor Authentication (2FA), session management, and passkey support"
+    ],
+    responsibilities: [
+      "Led the architecture and build of the full system, covering both clinical departments and administrative back-office functions",
+      "Designed the system in independent modules so new departments or features can be added without reworking the rest of the platform",
+      "Developed secure RESTful APIs powering the web application, internal modules, and third-party integrations",
+      "Built comprehensive patient management, clinical workflows, laboratory, pharmacy, and billing modules",
+      "Implemented SHA/NHIF insurance workflows, appointment scheduling, dental module, and vaccination workflows",
+      "Designed reporting modules for financial performance, disease surveillance, and regulatory submissions",
+      "Implemented RBAC with department-specific permissions and comprehensive audit logging",
+      "Integrated Two-Factor Authentication (2FA), session management, and passkey support",
+      "Tuned database design and SQL queries to keep the system responsive as patient and clinical records grew",
+      "Wrote architecture notes, deployment procedures, API docs, and support runbooks for team operations"
+    ],
+    impact: "Replaced paper-based systems with a unified digital platform, enabling healthcare facilities to streamline clinical operations, improve patient care, ensure regulatory compliance, and reduce administrative overhead.",
+    challenges: "Designing a modular architecture that could accommodate diverse clinical workflows across different healthcare facility sizes while maintaining data integrity, security, and regulatory compliance requirements.",
+  },
   {
     title: "Hamaline Insurance Management Platform",
     role: "Lead Solution Architect & Software Developer",
@@ -50,6 +101,7 @@ const projects = [
     ],
     impact: "Created a unified marketplace that enabled venue hosts to monetize their spaces and simplified the booking process for end-users, boosting bookings and user retention.",
     challenges: "Synchronizing listing availability in real-time across dynamic calendars to avoid double-bookings.",
+    liveUrl: "https://blvdguide.com/",
   },
   {
     title: "2B Gamers E-Commerce Platform",
@@ -73,6 +125,7 @@ const projects = [
     ],
     impact: "Automated the purchasing cycle, significantly reduced transaction abandonment rates via instant M-Pesa checkouts, and provided accurate real-time inventory levels.",
     challenges: "Handling real-time payment reconciliation and ensuring transactions are secure and resilient to network dropouts.",
+    liveUrl: "https://2bgamersstore.co.ke/",
   },
   {
     title: "Enterprise CRM Platform",
@@ -117,6 +170,7 @@ const projects = [
     ],
     impact: "Minimized stock discrepancy, improved order fulfillment accuracy, and simplified partner integration and data sharing.",
     challenges: "Structuring the product catalog to support complex, hierarchical categories and varied SKU metadata dynamically.",
+    liveUrl: "https://simplifinetworks.com/",
   },
   {
     title: "MwalimuPLUS Platform",
@@ -188,19 +242,19 @@ const projects = [
   }
 ];
 
-function ProjectCard({ project }: { project: typeof projects[0] }) {
+function ProjectCard({ project }: { project: Project }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="glass-effect p-6 md:p-8 rounded-2xl border border-white/10 shadow-lg card-hover h-full flex flex-col transition-all duration-300">
       <div className="flex-1">
         <h2 className="text-2xl font-bold text-gradient mb-2">{project.title}</h2>
-        
+
         <div className="flex items-center gap-2 mb-4 text-sm text-blue-400 font-medium">
           <Briefcase size={14} />
           <span>{project.role}</span>
         </div>
-        
+
         <p className="text-gray-300 mb-6 text-[15px] leading-relaxed">{project.overview}</p>
 
         <div className="flex flex-wrap gap-2 mb-6">
@@ -213,6 +267,21 @@ function ProjectCard({ project }: { project: typeof projects[0] }) {
             </span>
           ))}
         </div>
+
+        {project.liveUrl && (
+          <a
+            href={project.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 transition-colors mb-6"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+            </svg>
+            View Live Site
+          </a>
+        )}
       </div>
 
       {isOpen && (

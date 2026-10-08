@@ -24,7 +24,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10">
-            I&apos;m Kevin W. Wanyonyi, a results-driven engineer with 7+ years of experience in system architecture, enterprise applications, and technical leadership. Specializing in Laravel, Next.js, React, TypeScript, and robust API-driven platforms.
+            I&apos;m Kevin W. Wanyonyi, a results-driven engineer with 8+ years of experience in system architecture, enterprise applications, and technical leadership. Specializing in Laravel, Next.js, React, TypeScript, and robust API-driven platforms.
           </p>
 
           <div className="flex justify-center gap-4">

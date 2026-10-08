@@ -10,7 +10,7 @@ import CollaboratorsSection from "./components/home/CollaboratorsSection";
 export const metadata: Metadata = {
   title: "Kevin Wafula Wanyonyi | Senior Full Stack Software Engineer",
   description:
-    "Kevin Wafula Wanyonyi is a Senior Full Stack Software Engineer based in Nairobi, Kenya with 7+ years of experience in Laravel, Next.js, React, and system architecture.",
+    "Kevin Wafula Wanyonyi is a Senior Full Stack Software Engineer based in Nairobi, Kenya with 8+ years of experience in Laravel, Next.js, React, and system architecture.",
   keywords: [
     "Senior Full Stack Software Engineer",
     "Laravel Developer",

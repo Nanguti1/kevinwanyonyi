@@ -1,15 +1,28 @@
 "use client";
 import { useState } from "react";
-import { Briefcase } from "lucide-react";
+import { Briefcase, ChevronDown, ChevronUp } from "lucide-react";
 
 // Sample work history data
 const workHistory = [
   {
     company: "Freelance",
-    role: "Full-Stack Software Developer",
+    role: "Senior Full-Stack Software Consultant",
     period: "June 2023 — Present",
     startYear: 2023,
     endYear: "Present",
+    description: "Designs, builds, deploys and supports software for clients across several industries, usually owning a project from initial requirements through to production and beyond.",
+    achievements: [
+      "Took projects from requirements through to production, building systems clients rely on for day-to-day operations",
+      "Architected Laravel and Django applications designed to handle growing user bases and data volumes",
+      "Developed responsive web applications using Next.js, React, Vue.js and Tailwind CSS",
+      "Built secure RESTful APIs and integrated third-party platforms, payment gateways, and external services",
+      "Automated recurring business workflows using Microsoft Power Automate and custom web tooling",
+      "Designed relational database schemas and tuned SQL queries to optimize performance",
+      "Deployed and managed production systems on DigitalOcean cloud infrastructure and Linux VPS environments",
+      "Configured Nginx web servers, SSL certificates, domain management, and production environments",
+      "Managed Docker-based deployments and CI/CD workflows",
+      "Wrote comprehensive documentation: deployment guides, API references, and architecture notes"
+    ]
   },
   {
     company: "AfriQ Network Solutions Ltd",
@@ -17,6 +30,17 @@ const workHistory = [
     period: "May 2022 — May 2023",
     startYear: 2022,
     endYear: 2023,
+    description: "Developed and maintained enterprise applications, with a focus on reliability and security in production.",
+    achievements: [
+      "Developed Laravel systems",
+      "Built RESTful APIs",
+      "Designed and optimized SQL databases",
+      "Supported production deployments",
+      "Improved application performance",
+      "Resolved production incidents",
+      "Worked within an Agile delivery process",
+      "Collaborated with cross-functional teams"
+    ]
   },
   {
     company: "MwalimuPLUS & Ajira Connect",
@@ -24,11 +48,23 @@ const workHistory = [
     period: "October 2018 — April 2022",
     startYear: 2018,
     endYear: 2022,
+    description: "Designed and maintained web applications supporting education, recruitment, reporting, and workflow automation.",
+    achievements: [
+      "Developed applications using Laravel and Yii2",
+      "Designed secure authentication systems",
+      "Built reusable backend services",
+      "Developed reporting dashboards",
+      "Optimized SQL performance",
+      "Automated business workflows",
+      "Maintained production applications",
+      "Worked closely with business stakeholders"
+    ]
   },
 ];
 
 export default function WorkHistory() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   return (
     <section className="py-16 bg-gray-900/50">
@@ -80,6 +116,42 @@ export default function WorkHistory() {
                   </span>
                 </div>
                 <p className="text-xl text-gray-300 mb-2">{work.role}</p>
+
+                {/* Expandable Details */}
+                {expandedIndex === index && (
+                  <div className="mt-4 pt-4 border-t border-white/10 animate-fadeIn">
+                    <p className="text-gray-400 mb-4">{work.description}</p>
+                    <div className="space-y-2">
+                      <h4 className="text-sm font-semibold text-blue-400 mb-2">Key Achievements:</h4>
+                      <ul className="space-y-2">
+                        {work.achievements.map((achievement, i) => (
+                          <li key={i} className="flex items-start text-gray-300 text-sm">
+                            <span className="text-blue-500 mr-2 mt-1">•</span>
+                            <span>{achievement}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                )}
+
+                {/* Expand/Collapse Button */}
+                <button
+                  onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
+                  className="mt-4 text-sm text-blue-400 hover:text-blue-300 flex items-center gap-1 transition-colors"
+                >
+                  {expandedIndex === index ? (
+                    <>
+                      <ChevronUp size={16} />
+                      Show Less
+                    </>
+                  ) : (
+                    <>
+                      <ChevronDown size={16} />
+                      Show More Details
+                    </>
+                  )}
+                </button>
               </div>
             </div>
           ))}
