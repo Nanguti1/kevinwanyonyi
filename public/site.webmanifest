@@ -1,0 +1,18 @@
+{
+  "name": "Kevin Wafula Wanyonyi - Senior Full Stack Software Engineer",
+  "short_name": "Kevin Wanyonyi",
+  "description": "Senior Full Stack Software Engineer specializing in Laravel, Next.js, React, and scalable enterprise applications.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/file.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

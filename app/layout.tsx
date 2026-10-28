@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     siteName: "Kevin Wafula Wanyonyi - Portfolio",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/kevin-wanyonyi-fullstack-software-developer.jpg",
         width: 1200,
         height: 630,
         alt: "Kevin Wafula Wanyonyi - Senior Full Stack Software Engineer",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     title: "Kevin Wafula Wanyonyi – Senior Full Stack Software Engineer",
     description:
       "Kevin Wafula Wanyonyi is a Senior Full Stack Software Engineer focusing on Laravel, Next.js, and system architecture. View portfolio, hire or connect.",
-    images: ["/images/twitter-image.jpg"],
+    images: ["/kevin-wanyonyi-fullstack-software-developer.jpg"],
     site: "@kevinwanyonyi",
     creator: "@kevinwanyonyi",
   },

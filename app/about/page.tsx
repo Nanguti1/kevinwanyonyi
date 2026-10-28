@@ -123,7 +123,7 @@ const AboutPage = () => {
                       <div className="w-full h-full rounded-full overflow-hidden">
                         <img
                           src="/kevin-wanyonyi-fullstack-software-developer.jpg"
-                          alt="Kevin Wanyonyi"
+                          alt="Kevin Wafula Wanyonyi - Senior Full Stack Software Engineer"
                           className="w-full h-full object-cover"
                         />
                       </div>
