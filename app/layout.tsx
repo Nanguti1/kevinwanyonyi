@@ -12,7 +12,7 @@ const fontSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://wanyonyikevin.co.ke"),
+  metadataBase: new URL("https://wanyonyi.co.ke"),
   title: {
     default: "Kevin Wafula Wanyonyi – Senior Full Stack Software Engineer",
     template: "%s | Kevin Wafula Wanyonyi",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "Hire Laravel Developer Kenya",
     "Hire Next.js Developer Kenya",
   ],
-  authors: [{ name: "Kevin Wafula Wanyonyi", url: "https://wanyonyikevin.co.ke" }],
+  authors: [{ name: "Kevin Wafula Wanyonyi", url: "https://wanyonyi.co.ke" }],
   creator: "Kevin Wafula Wanyonyi",
   publisher: "Kevin Wafula Wanyonyi",
   themeColor: "#0f172a",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://wanyonyikevin.co.ke",
+    url: "https://wanyonyi.co.ke",
     title: "Kevin Wafula Wanyonyi – Senior Full Stack Software Engineer",
     description:
       "Kevin Wafula Wanyonyi is a Senior Full Stack Software Engineer with 7+ years of experience in Laravel, PHP, Next.js, React, and system architecture.",
@@ -99,7 +99,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Kevin Wafula Wanyonyi",
-  url: "https://wanyonyikevin.co.ke",
+  url: "https://wanyonyi.co.ke",
   sameAs: [
     "https://github.com/nanguti",
     "https://linkedin.com/in/kevin-w-wanyonyi",

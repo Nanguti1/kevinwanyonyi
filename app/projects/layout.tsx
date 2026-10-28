@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Projects | Kevin Wafula Wanyonyi",
     description: "Explore Kevin Wanyonyi's portfolio of enterprise software projects including Hospital Information Systems, Insurance Platforms, and E-commerce solutions.",
-    url: "https://wanyonyikevin.co.ke/projects",
+    url: "https://wanyonyi.co.ke/projects",
   },
 };
 

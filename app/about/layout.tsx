@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Kevin Wafula Wanyonyi",
     description: "Learn about Kevin Wafula Wanyonyi, a Senior Full Stack Software Engineer from Kenya with 8+ years of experience.",
-    url: "https://wanyonyikevin.co.ke/about",
+    url: "https://wanyonyi.co.ke/about",
   },
 };
 

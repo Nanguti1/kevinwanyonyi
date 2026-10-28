@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact Kevin Wafula Wanyonyi",
     description: "Get in touch with Kevin Wafula Wanyonyi, Senior Full Stack Software Engineer. Available for Laravel, Next.js, and enterprise software development projects.",
-    url: "https://wanyonyikevin.co.ke/contact",
+    url: "https://wanyonyi.co.ke/contact",
   },
 };
 

@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/", "/private/"],
       },
     ],
-    sitemap: "https://wanyonyikevin.co.ke/sitemap.xml",
+    sitemap: "https://wanyonyi.co.ke/sitemap.xml",
   };
 }
